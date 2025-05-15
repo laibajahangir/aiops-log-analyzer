@@ -1,0 +1,15 @@
+
+langchain
+transformers
+sentencepiece
+accelerate
+bitsandbytes
+psycopg2-binary
+python-dotenv
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+python-docx
+sqlalchemy
