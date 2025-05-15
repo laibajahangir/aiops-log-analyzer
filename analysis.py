@@ -1,4 +1,4 @@
-# Paste your entire new code here, multiple lines are allowed
+
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 def load_llm():
