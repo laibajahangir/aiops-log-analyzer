@@ -1,5 +1,5 @@
 
-import sqlite3  # Using SQLite for demo, replace with psycopg2 for PostgreSQL
+import sqlite3  
 from config import DB_CONFIG
 
 def get_db_connection():
