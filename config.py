@@ -5,7 +5,7 @@ import os
 DB_CONFIG = {
     'dbname': 'logs_db',
     'user': 'postgres',
-    'password': 'yourpassword',
+    'password': 'laiba124',
     'host': 'localhost',
     'port': '5432'
 }
