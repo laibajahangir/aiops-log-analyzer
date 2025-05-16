@@ -1,38 +1,47 @@
-# Log Analysis Using Open-Source LLM
+📌 Task Summary
+This project focuses on analyzing system log files using an open-source Large Language Model (LLM). The primary objectives included:
 
-## Task Summary
-The objective of this project was to perform log analysis using an open-source Large Language Model (LLM), store results in a database, and generate a structured report. Key tasks included:
+Parsing and preprocessing raw log files.
 
-- Parsing and preprocessing log files.
-- Leveraging an LLM for interpreting log messages and identifying potential anomalies.
-- Storing analysis results in a database.
-- Generating a human-readable report.
+Utilizing an LLM to interpret log messages and detect potential anomalies.
 
-## Implementation Details
+Storing the results in a structured database.
 
-Due to hardware and resource limitations on my local machine, I was unable to deploy the **LLaMA 3 8B model**, which requires high-end GPUs. Instead, I used **GPT-2** via HuggingFace and LangChain, which is an open-source model suitable for CPU-based environments.
+Generating a comprehensive, human-readable report.
 
-I followed the entire pipeline as outlined:
+⚙️ Implementation Details
+Due to resource constraints on my local machine, deploying a resource-intensive model like LLaMA 3 (8B) was not feasible. Therefore, I opted to use GPT-2 via HuggingFace and LangChain, an open-source LLM well-suited for CPU environments.
 
-1. **Log Parsing**: Loaded and preprocessed log data from `.log` files.
-2. **LLM Integration**: Used GPT-2 to analyze logs, identify issues, and extract semantic insights.
-3. **Database**: Used SQLite for storing the structured analysis, considering that PostgreSQL setup wasn't feasible locally.
-4. **Reporting**: Generated a detailed Word document summarizing findings using `docx`.
+The project pipeline followed these steps:
 
-## Justification for Model Choice
+Log Parsing: Loaded .log files and applied preprocessing techniques.
 
-The use of GPT-2 was necessary due to:
-- Limited GPU resources.
-- Compatibility with CPU-only environments.
-- The project’s requirement for an open-source model, which GPT-2 satisfies.
+LLM Analysis: Employed GPT-2 to semantically analyze log data and highlight anomalies or issues.
 
-Despite the limitations, the core task goals were achieved:
-- Logs were successfully parsed.
-- Analysis was performed using an open-source LLM.
-- A database was created and populated.
-- A readable report was generated for stakeholders.
+Data Storage: Used SQLite for storing analysis results due to its simplicity and local compatibility (as PostgreSQL setup was not viable).
 
-## Conclusion
+Report Generation: Created a structured and formatted report using python-docx to summarize insights and findings.
 
-All assignment objectives were met within the constraints of the available infrastructure. This project demonstrates the ability to adapt toolchains and models based on the resources at hand, without compromising the integrity of the task.
+🤖 Justification for GPT-2
+GPT-2 was chosen because:
+
+It is open-source and freely available via HuggingFace.
+
+It runs efficiently in CPU-only environments.
+
+It fulfilled the core analytical requirements of the project.
+
+✅ Outcome
+Despite hardware limitations, all project goals were successfully achieved:
+
+Logs were parsed and analyzed.
+
+An LLM was integrated for semantic understanding.
+
+Analysis results were stored in a database.
+
+A comprehensive report was generated for stakeholders.
+
+📝 Conclusion
+This project demonstrates my ability to adapt tools and models to infrastructure constraints while delivering a complete and functional solution. It showcases practical experience in integrating open-source LLMs, handling real-world log data, and delivering structured results in a resource-constrained environment.
 
